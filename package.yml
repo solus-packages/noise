@@ -1,6 +1,6 @@
 name        : noise
 version     : 0.3.1
-release     : 1
+release     : 2
 source     :
     - https://launchpad.net/noise/0.3.x/0.3.1/+download/noise-0.3.1.tgz : 245c4659d0944be59b53ed24089ffe7ad77dbaf6d1834b871bc860bc646e0e1e
 license     : GPL-3.0
