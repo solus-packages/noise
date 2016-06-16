@@ -1,26 +1,27 @@
 name        : noise
 version     : 0.3.1
-release     : 2
+release     : 3
 source     :
     - https://launchpad.net/noise/0.3.x/0.3.1/+download/noise-0.3.1.tgz : 245c4659d0944be59b53ed24089ffe7ad77dbaf6d1834b871bc860bc646e0e1e
 license     : GPL-3.0
+component   : multimedia.audio
 summary     : Noise Music Player
-builddeps   :
-    - pkgconfig(taglib_c)
-    - pkgconfig(libnotify)
-    - pkgconfig(gee-0.8)
-    - pkgconfig(libpeas-1.0)
-    - pkgconfig(sqlheavy-0.1)
-    - pkgconfig(gtk+-3.0)
-    - pkgconfig(granite)
-    - pkgconfig(gstreamer-tag-1.0)
-    - pkgconfig(gstreamer-1.0)
-    - pkgconfig(json-glib-1.0)
-    - pkgconfig(libsoup-2.4)
-    - desktop-file-utils
-    - vala
 description : |
     The Pantheon Music Player designed for elementary OS
+builddeps   :
+    - pkgconfig(gee-0.8)
+    - pkgconfig(granite)
+    - pkgconfig(gstreamer-1.0)
+    - pkgconfig(gstreamer-tag-1.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libnotify)
+    - pkgconfig(libpeas-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(sqlheavy-0.1)
+    - pkgconfig(taglib_c)
+    - desktop-file-utils
+    - vala
 setup      : |
     %cmake .
 build      : |

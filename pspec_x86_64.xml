@@ -2,54 +2,69 @@
     <Source>
         <Name>noise</Name>
         <Packager>
-            <Name>Justin Zobel</Name>
-            <Email>justin@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <Summary xml:lang="en">The Pantheon Music Player</Summary>
-        <Description xml:lang="en">The Pantheon Music Player
+        <PartOf>multimedia.audio</PartOf>
+        <Summary xml:lang="en">Noise Music Player</Summary>
+        <Description xml:lang="en">The Pantheon Music Player designed for elementary OS
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>noise-devel</Name>
-        <Summary xml:lang="en">Development files for noise</Summary>
-        <Description xml:lang="en">The Pantheon Music Player
+        <Name>noise</Name>
+        <Summary xml:lang="en">Noise Music Player</Summary>
+        <Description xml:lang="en">The Pantheon Music Player designed for elementary OS
 </Description>
-        <PartOf>programming.devel</PartOf>
-        <RuntimeDependencies>
-            <Dependency release="current">noise</Dependency>
-        </RuntimeDependencies>
+        <PartOf>multimedia.audio</PartOf>
         <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/share/vala*</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/noise/plugins/AudioPlayer-Device/audioplayer-device.plugin</Path>
+            <Path fileType="library">/usr/lib64/noise/plugins/AudioPlayer-Device/libaudioplayer-device.so</Path>
+            <Path fileType="library">/usr/lib64/noise/plugins/CDRom-Device/cdrom-device.plugin</Path>
+            <Path fileType="library">/usr/lib64/noise/plugins/CDRom-Device/libcdrom-device.so</Path>
+            <Path fileType="library">/usr/lib64/noise/plugins/LastFM/lastfm.plugin</Path>
+            <Path fileType="library">/usr/lib64/noise/plugins/LastFM/liblastfm.so</Path>
+            <Path fileType="data">/usr/share/applications/noise.desktop</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.pantheon.noise.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.pantheon.noise.lastfm.gschema.xml</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/multimedia-audio-player.svg</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/noise</Path>
         </Files>
     </Package>
     <Package>
-        <Name>noise</Name>
-        <Summary xml:lang="en">The Pantheon Music Player</Summary>
-        <Description xml:lang="en">The Pantheon Music Player
+        <Name>noise-devel</Name>
+        <Summary xml:lang="en">Development files for noise</Summary>
+        <Description xml:lang="en">The Pantheon Music Player designed for elementary OS
 </Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="3">noise</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/glib-2.0</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/noise</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="library">/usr/lib64/noise</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/share/vala*/vapi/*</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2015-09-09</Date>
+        <Update release="3">
+            <Date>2016-06-16</Date>
             <Version>0.3.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Justin Zobel</Name>
-            <Email>justin@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
