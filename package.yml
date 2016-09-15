@@ -1,8 +1,8 @@
 name        : noise
-version     : 0.3.1
-release     : 3
+version     : 0.4
+release     : 4
 source     :
-    - https://launchpad.net/noise/0.3.x/0.3.1/+download/noise-0.3.1.tgz : 245c4659d0944be59b53ed24089ffe7ad77dbaf6d1834b871bc860bc646e0e1e
+    - https://launchpad.net/noise/0.4.x/0.4/+download/noise-0.4.tar.xz : ae7b1f07df1f1e773c602cad224188ebc26799f1b759525b114edc698d044ab1
 license     : GPL-3.0
 component   : multimedia.audio
 summary     : Noise Music Player
@@ -15,11 +15,13 @@ builddeps   :
     - pkgconfig(gstreamer-tag-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
+    - pkgconfig(libgda-5.0)
     - pkgconfig(libnotify)
     - pkgconfig(libpeas-1.0)
     - pkgconfig(libsoup-2.4)
     - pkgconfig(sqlheavy-0.1)
     - pkgconfig(taglib_c)
+    - pkgconfig(zeitgeist-2.0)
     - desktop-file-utils
     - vala
 setup      : |

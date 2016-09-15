@@ -2,8 +2,8 @@
     <Source>
         <Name>noise</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Blaž Mežnaršič</Name>
+            <Email>blazingeek@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>multimedia.audio</PartOf>
@@ -25,11 +25,8 @@
             <Path fileType="library">/usr/lib64/noise/plugins/AudioPlayer-Device/libaudioplayer-device.so</Path>
             <Path fileType="library">/usr/lib64/noise/plugins/CDRom-Device/cdrom-device.plugin</Path>
             <Path fileType="library">/usr/lib64/noise/plugins/CDRom-Device/libcdrom-device.so</Path>
-            <Path fileType="library">/usr/lib64/noise/plugins/LastFM/lastfm.plugin</Path>
-            <Path fileType="library">/usr/lib64/noise/plugins/LastFM/liblastfm.so</Path>
-            <Path fileType="data">/usr/share/applications/noise.desktop</Path>
+            <Path fileType="data">/usr/share/applications/org.pantheon.noise.desktop</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/org.pantheon.noise.gschema.xml</Path>
-            <Path fileType="data">/usr/share/glib-2.0/schemas/org.pantheon.noise.lastfm.gschema.xml</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/multimedia-audio-player.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/multimedia-audio-player.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/multimedia-audio-player.svg</Path>
@@ -39,6 +36,7 @@
             <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/multimedia-audio-player.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/multimedia-audio-player.svg</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/metainfo/org.pantheon.noise.appdata.xml</Path>
             <Path fileType="data">/usr/share/noise</Path>
         </Files>
     </Package>
@@ -49,7 +47,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="3">noise</Dependency>
+            <Dependency release="4">noise</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -59,12 +57,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2016-06-16</Date>
-            <Version>0.3.1</Version>
+        <Update release="4">
+            <Date>2016-09-15</Date>
+            <Version>0.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Blaž Mežnaršič</Name>
+            <Email>blazingeek@gmail.com</Email>
         </Update>
     </History>
 </PISI>
