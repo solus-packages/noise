@@ -2,8 +2,8 @@
     <Source>
         <Name>noise</Name>
         <Packager>
-            <Name>Blaž Mežnaršič</Name>
-            <Email>blazingeek@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>multimedia.audio</PartOf>
@@ -47,7 +47,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">noise</Dependency>
+            <Dependency release="5">noise</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -57,12 +57,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2016-09-15</Date>
+        <Update release="5">
+            <Date>2016-09-18</Date>
             <Version>0.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Blaž Mežnaršič</Name>
-            <Email>blazingeek@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>

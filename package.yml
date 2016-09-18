@@ -1,6 +1,6 @@
 name        : noise
 version     : 0.4
-release     : 4
+release     : 5
 source     :
     - https://launchpad.net/noise/0.4.x/0.4/+download/noise-0.4.tar.xz : ae7b1f07df1f1e773c602cad224188ebc26799f1b759525b114edc698d044ab1
 license     : GPL-3.0
@@ -16,10 +16,7 @@ builddeps   :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libgda-5.0)
-    - pkgconfig(libnotify)
     - pkgconfig(libpeas-1.0)
-    - pkgconfig(libsoup-2.4)
-    - pkgconfig(sqlheavy-0.1)
     - pkgconfig(taglib_c)
     - pkgconfig(zeitgeist-2.0)
     - desktop-file-utils
