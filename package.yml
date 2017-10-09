@@ -1,6 +1,6 @@
 name       : noise
 version    : 0.4.1
-release    : 9
+release    : 10
 source     :
     - https://github.com/elementary/music/archive/0.4.1.tar.gz : cd7020b8ee3bb878ff1686a86a808b06ea51f08132152c3e27b10998e8b16f77
 license    : GPL-3.0
@@ -22,6 +22,7 @@ builddeps  :
     - desktop-file-utils
     - vala
 setup      : |
+    %patch -p1 < $pkgfiles/0001-Set-Close-While-Playing-so-the-user-can-actually-clo.patch
     %cmake .
 build      : |
     %make

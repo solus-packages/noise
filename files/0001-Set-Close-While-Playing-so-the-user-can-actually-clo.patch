@@ -1,0 +1,26 @@
+From 32707fd4d3e94ec3a0a65de8f0804033926b1e8d Mon Sep 17 00:00:00 2001
+From: Joshua Strobl <joshua@stroblindustries.com>
+Date: Tue, 10 Oct 2017 02:25:31 +0300
+Subject: [PATCH 1/1] Set Close While Playing so the user can actually close /
+ exit the program.
+
+---
+ schemas/org.pantheon.noise.gschema.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/schemas/org.pantheon.noise.gschema.xml b/schemas/org.pantheon.noise.gschema.xml
+index 614db6e..ad8b415 100644
+--- a/schemas/org.pantheon.noise.gschema.xml
++++ b/schemas/org.pantheon.noise.gschema.xml
+@@ -42,7 +42,7 @@
+       <description>Whether or not to copy imported files to music folder</description>
+     </key>
+     <key type="b" name="close-while-playing">
+-      <default>false</default>
++      <default>true</default>
+       <summary>Whether to close the player's window instead of hiding/minimizing it when a song is still playing. The window can be brought back by activating its desktop file.</summary>
+       <description>When enabled, the window will be closed even if a song is still being played (i.e. close = quit). Otherwise, if a song is being played, the application will not be closed, but minimized/hidden. The player is minimized or hidden depending on the values of the minimize-while-playing-shells key.</description>
+     </key>
+-- 
+2.14.2
+
