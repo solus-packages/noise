@@ -1,13 +1,13 @@
 name       : noise
 version    : 0.4.1
-release    : 10
+release    : 11
 source     :
     - https://github.com/elementary/music/archive/0.4.1.tar.gz : cd7020b8ee3bb878ff1686a86a808b06ea51f08132152c3e27b10998e8b16f77
 license    : GPL-3.0
 component  : multimedia.audio
 summary    : Noise Music Player
 description: |
-    The Pantheon Music Player designed for elementary OS
+    The Noise Music Player designed for elementary OS
 builddeps  :
     - pkgconfig(gee-0.8)
     - pkgconfig(granite)
@@ -23,6 +23,7 @@ builddeps  :
     - vala
 setup      : |
     %patch -p1 < $pkgfiles/0001-Set-Close-While-Playing-so-the-user-can-actually-clo.patch
+    %patch -p1 < $pkgfiles/0001-Tweak-AppData-to-improve-discoverability-under-Solus.patch
     %cmake .
 build      : |
     %make
