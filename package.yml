@@ -1,8 +1,8 @@
 name       : noise
-version    : 0.4.1
-release    : 11
+version    : 0.4.2
+release    : 12
 source     :
-    - https://github.com/elementary/music/archive/0.4.1.tar.gz : cd7020b8ee3bb878ff1686a86a808b06ea51f08132152c3e27b10998e8b16f77
+    - https://github.com/elementary/music/archive/0.4.2.tar.gz : 9e707e52da12eeb89b42630c697ac0adfefd20a0a12eac37ff3c65b106e0c9d3
 license    : GPL-3.0
 component  : multimedia.audio
 summary    : Noise Music Player
