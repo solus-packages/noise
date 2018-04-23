@@ -1,0 +1,44 @@
+From a2cd9bf70d29c4c4ad5fea9630d8cf95dd211ad4 Mon Sep 17 00:00:00 2001
+From: Joshua Strobl <joshua@stroblindustries.com>
+Date: Mon, 23 Apr 2018 07:25:28 +0300
+Subject: [PATCH 1/1] Set Solus defaults.
+
+---
+ data/io.elementary.music.appdata.xml.in | 4 ++--
+ data/io.elementary.music.gschema.xml    | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/data/io.elementary.music.appdata.xml.in b/data/io.elementary.music.appdata.xml.in
+index cd899211..02f4bb0b 100644
+--- a/data/io.elementary.music.appdata.xml.in
++++ b/data/io.elementary.music.appdata.xml.in
+@@ -5,11 +5,11 @@
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_group>elementary</project_group>
+     <project_license>GPL-3.0+</project_license>
+-    <name>Music</name>
++    <name>Music (Noise)</name>
+     <summary>The official elementary music player</summary>
+     <description>
+         <p>
+-        Music is a fast and beautiful audio player with a focus on
++        Music (otherwise referred to as Noise) is a fast and beautiful audio player with a focus on
+         music and libraries. It handles external devices, CDs, and
+         album art.
+         </p>
+diff --git a/data/io.elementary.music.gschema.xml b/data/io.elementary.music.gschema.xml
+index dfb6e097..936a698b 100644
+--- a/data/io.elementary.music.gschema.xml
++++ b/data/io.elementary.music.gschema.xml
+@@ -40,7 +40,7 @@
+       <description>Whether or not to copy imported files to music folder</description>
+     </key>
+     <key type="b" name="close-while-playing">
+-      <default>false</default>
++      <default>true</default>
+       <summary>Whether to close the player's window instead of hiding/minimizing it when a song is still playing. The window can be brought back by activating its desktop file.</summary>
+       <description>When enabled, the window will be closed even if a song is still being played (i.e. close = quit). Otherwise, if a song is being played, the application will not be closed, but minimized/hidden. The player is minimized or hidden depending on the values of the minimize-while-playing-shells key.</description>
+     </key>
+-- 
+2.16.3
+

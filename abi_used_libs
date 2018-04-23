@@ -7,6 +7,7 @@ libgee-0.8.so.2
 libgio-2.0.so.0
 libglib-2.0.so.0
 libgobject-2.0.so.0
+libgpod.so.4
 libgranite.so.4
 libgstpbutils-1.0.so.0
 libgstreamer-1.0.so.0
@@ -16,5 +17,6 @@ libm.so.6
 libpango-1.0.so.0
 libpeas-1.0.so.0
 libpeas-gtk-1.0.so.0
+libpthread.so.0
 libtag_c.so.0
 libzeitgeist-2.0.so.0

@@ -1,9 +1,9 @@
 name       : noise
 version    : 0.4.2
-release    : 13
+release    : 14
 source     :
-    - https://github.com/elementary/music/archive/0.4.2.tar.gz : 9e707e52da12eeb89b42630c697ac0adfefd20a0a12eac37ff3c65b106e0c9d3
-license    : GPL-3.0
+    - git|https://github.com/elementary/music.git : 93b45982afa65c8127d1471b6541d3b6d1d8a335
+license    : GPL-3.0-or-later
 component  : multimedia.audio
 summary    : Noise Music Player
 description: |
@@ -16,16 +16,16 @@ builddeps  :
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libgda-5.0)
+    - pkgconfig(libgpod-1.0)
     - pkgconfig(libpeas-1.0)
     - pkgconfig(taglib_c)
     - pkgconfig(zeitgeist-2.0)
     - desktop-file-utils
     - vala
 setup      : |
-    %patch -p1 < $pkgfiles/0001-Set-Close-While-Playing-so-the-user-can-actually-clo.patch
-    %patch -p1 < $pkgfiles/0001-Tweak-AppData-to-improve-discoverability-under-Solus.patch
-    %cmake .
+    %patch -p1 < $pkgfiles/0001-Set-Solus-defaults.patch
+    %meson_configure -Dplugins=audioplayer,cdrom,ipod
 build      : |
-    %make
+    %ninja_build
 install    : |
-    %make_install
+    %ninja_install
