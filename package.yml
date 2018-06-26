@@ -1,6 +1,6 @@
 name       : noise
 version    : 0.4.2
-release    : 14
+release    : 15
 source     :
     - git|https://github.com/elementary/music.git : 93b45982afa65c8127d1471b6541d3b6d1d8a335
 license    : GPL-3.0-or-later
