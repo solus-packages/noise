@@ -1,6 +1,6 @@
 name       : noise
 version    : 5.0.4
-release    : 18
+release    : 19
 source     :
     - https://github.com/elementary/music/archive/5.0.4.tar.gz : 375b9e4d7c6c842eb0d738e5073cf28198328768df2f3a2fa9895bc194a41d94
 license    : GPL-3.0-or-later
